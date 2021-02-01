@@ -74,3 +74,17 @@ npm run build
     "./build/**/*"
   ],
 ```
+
+# Bump Version
+
+```
+npm version patch
+```
+
+# Short Command to bump and publish
+
+- go to package.json script section
+
+```
+"pub": "git add . && git commit -m \"Bump Version\" && npm version patch && npm run build && npm publish"
+```

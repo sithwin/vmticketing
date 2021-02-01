@@ -4,6 +4,8 @@ changed the name to @vmticketing/common
 
 # init git
 
+- add gitignor file
+
 ```
 git init
 git add .
@@ -54,9 +56,21 @@ npm run build
 
 ## Change to script to build and clean
 
+- go to package.json
+
 ```
   "scripts": {
     "clean": "del-cli ./build/*",
     "build": "npm run clean && tsc"
   },
+```
+
+## Change following setting in package.json
+
+```
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "./build/**/*"
+  ],
 ```

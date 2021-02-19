@@ -9,5 +9,6 @@ export * from "./middlewares/current-user";
 export * from "./middlewares/error-handler";
 export * from "./middlewares/require-auth";
 export * from "./middlewares/validate-request";
-
+export * from "./events/model/ticket-created-event";
+export * from "./events/model/ticket-updated-event";
 console.log("Added middlewares");

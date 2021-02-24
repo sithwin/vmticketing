@@ -15,4 +15,5 @@ export * from "./events/model/ticket-updated-event";
 export * from "./events/base-listener";
 export * from "./events/base-publisher";
 export * from "./events/subjects";
+export * from "./events/types/order-status";
 console.log("Added middlewares");
